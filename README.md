@@ -69,20 +69,3 @@ Then build the project and you're ready to use it.
 
 
 
-## In Collaboration With
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d129ba8b-a8ee-4763-86e1-a2639dc7ccad" 
-       alt="in-collaboration-with-jetbrains" 
-       width="400" />
-</p>
-
----
-
-## Learn to Build This App
-
-<div align="center">
-  <img width="1500" height="909" alt="bundle-transparent" src="https://github.com/user-attachments/assets/4e11bffd-839c-4eae-9d60-5802fa0757f3" />
-</div>
-
-This project is part of the [**Master Building Industry-Scale Full-Stack Kotlin Apps**](https://pl-coding.com/cmp-mobile?utm_source=github&utm_medium=readme&utm_campaign=default&cmc_strip=utm) bundle where you'll learn to build production-ready apps from scratch.
