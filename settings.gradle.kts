@@ -1,7 +1,10 @@
+import org.gradle.language.nativeplatform.internal.Include
+
 rootProject.name = "Chirp"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
+    include("build-logic")
     repositories {
         google {
             mavenContent {
