@@ -60,15 +60,16 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
+
+                implementation(projects.feature.auth.domain)
+                implementation(projects.core.domain)
+                implementation(projects.core.designsystem)
+                implementation(projects.core.presentation)
                 // Add KMP dependencies here
             }
         }
 
-        commonTest {
-            dependencies {
-                implementation(libs.kotlin.test)
-            }
-        }
+
 
         androidMain {
             dependencies {
@@ -78,13 +79,7 @@ kotlin {
             }
         }
 
-        getByName("androidDeviceTest") {
-            dependencies {
-                implementation(libs.androidx.runner)
-                implementation(libs.androidx.test.core)
-                implementation(libs.androidx.junit)
-            }
-        }
+
 
         iosMain {
             dependencies {
