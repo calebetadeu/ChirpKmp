@@ -10,7 +10,7 @@ kotlin {
     // which platforms this KMP module supports.
     // See: https://kotlinlang.org/docs/multiplatform-discover-project.html#targets
     androidLibrary {
-        namespace = "com.calebetadeu.chat.data"
+        namespace = "com.calebetadeu.chat.presentation"
         compileSdk = 36
         minSdk = 24
 
@@ -31,7 +31,7 @@ kotlin {
     // A step-by-step guide on how to include this library in an XCode
     // project can be found here:
     // https://developer.android.com/kotlin/multiplatform/migrate
-    val xcfName = "feature:chat:dataKit"
+    val xcfName = "feature:chat:presentationKit"
 
     iosX64 {
         binaries.framework {
@@ -63,10 +63,11 @@ kotlin {
 
                 implementation(projects.core.domain)
                 implementation(projects.feature.chat.domain)
-                implementation(projects.feature.chat.database)
-                // Add KMP dependencies here
+                implementation(projects.core.designsystem)
+
             }
         }
+
 
 
         androidMain {
@@ -76,6 +77,7 @@ kotlin {
                 // dependencies declared in commonMain.
             }
         }
+
 
 
         iosMain {
